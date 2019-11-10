@@ -1,0 +1,27 @@
+<%- include('partial/header'); -%>
+<h1 class="booknow-title">Capture Your Memories</h1>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+  <div class="row" style = "margin : 0;">
+  <div class="col-3 photo-options">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-Wedding-list" data-toggle="list" href="#list-Wedding" role="tab" aria-controls="Wedding">Wedding</a>
+      <a class="list-group-item list-group-item-action" id="list-Sports-list" data-toggle="list" href="#list-Sports" role="tab" aria-controls="Party">Sports</a>
+      <a class="list-group-item list-group-item-action" id="list-Birthday-list" data-toggle="list" href="#list-Birthday" role="tab" aria-controls="Birthday">Birthday</a>
+<a class="list-group-item list-group-item-action" id="list-Outdoor-list" data-toggle="list" href="#list-Outdoor" role="tab" aria-controls="Outdoor">Outdoor</a>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-Wedding" role="tabpanel" aria-labelledby="list-Wedding-list"><%- include('wedding'); -%></div>
+      <div class="tab-pane fade" id="list-Sports" role="tabpanel" aria-labelledby="list-Sports-list"><%- include('sports'); -%></div>
+      <div class="tab-pane fade" id="list-Birthday" role="tabpanel" aria-labelledby="list-Birthday-list"><%- include('birthday'); -%></div>
+       <div class="tab-pane fade" id="list-Outdoor" role="tabpanel" aria-labelledby="list-Outdoor-list"><%- include('outdoor'); -%></div>
+    </div>
+  </div>
+
+
+
+
+<%- include('partial/footer'); -%>
